@@ -1,0 +1,92 @@
+.in-notes-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.in-header-one {
+  display: flex;
+  align-items: center;
+}
+
+.in-header-two {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-right: 5px;
+}
+
+.in-header-two img {
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+}
+
+.in-header-text {
+  text-align: center;
+  font-size: 10px;
+  color: #aeb1b1;
+}
+
+.habilidades-tecnicas {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.habilidades-tecnicas h4 {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.skills ul li {
+  font-size: 14px;
+  list-style: none;
+}
+
+.skills-one {
+  width: 50%;
+  line-height: 1.88;
+}
+
+.skills-two {
+  width: 50%;
+}
+
+.skills-two ul li {
+  font-size: 12px;
+  line-height: 2.2;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.in-notes-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.in-notes-footer img {
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+}

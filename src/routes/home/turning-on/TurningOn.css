@@ -1,0 +1,157 @@
+.iphone6 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.container {
+  background-color: black;
+  width: 300px;
+  height: 620px;
+}
+
+.frame {
+  width: 390px;
+  height: 800px;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 50px;
+}
+
+.frame-top {
+  width: 100%;
+  height: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  gap: 16px;
+  background-color: white;
+  border-radius: 50px 50px 0 0;
+}
+
+.sensor-container {
+  width: 70%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sensor {
+  width: 3.4%;
+  height: 100%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.speaker-cam {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.cam-container {
+  width: 38%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.camera {
+  width: 10%;
+  height: 75%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.speaker-container {
+  width: 62%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.speaker {
+  width: 40%;
+  height: 75%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.turning-on-screen {
+  width: 95%;
+  height: 77%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  /*
+    Estos estilos van inline en iphone
+    background-image: url("./Iphone\ 6\ wallpaper.jpg");
+    background-size: cover;
+    color: white; 
+    */
+}
+
+.turning-on-screen img {
+  width: 70px;
+}
+
+.turning-on-screen p {
+  font-size: 12px;
+  color: white;
+}
+
+.apple-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.apple-text p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.white {
+  color: white;
+}
+
+.frame-bottom {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 0 0 50px 50px;
+}
+
+.home-btn {
+  background-color: black;
+  width: 14%;
+  height: 70%;
+  border-radius: 50%;
+}

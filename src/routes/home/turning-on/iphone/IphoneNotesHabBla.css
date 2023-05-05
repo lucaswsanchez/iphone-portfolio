@@ -1,0 +1,26 @@
+.habilidades-blandas {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.habilidades-blandas h4 {
+  text-align: center;
+}
+
+.habilidades-blandas ul li {
+    list-style: none;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    padding-top: 5px;
+}
+
+.habilidades-blandas img {
+  padding-top: 10px;
+  width: 100%;
+}

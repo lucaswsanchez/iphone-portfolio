@@ -1,0 +1,75 @@
+.notes-screen {
+  width: 95%;
+  height: 77%;
+  background-color: #f0eeee;
+}
+
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8px;
+}
+
+.notes-header p {
+  font-size: 16px;
+}
+
+.notes {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 6px;
+}
+
+.search-notes {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #dfe0e2;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.search-notes input {
+  width: 100%;
+  background-color: #dfe0e2;
+  color: #8f8f94;
+  border: none;
+  outline: none;
+}
+
+.note {
+  border-bottom: 1px solid #d9d8db;
+  padding-bottom: 6px;
+}
+
+.note p {
+  font-size: 10px;
+}
+
+.notes-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 202px;
+}
+
+.notes-footer p {
+  font-size: 12px;
+}
+
+.notes-footer img {
+  width: 20px;
+  height: 20px;
+}
+
+.yellow {
+  color: #e4af0a;
+  text-decoration: none;
+}
+
+.black {
+  color: black;
+}

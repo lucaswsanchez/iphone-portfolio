@@ -1,0 +1,19 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+  [[redirects]]
+  from = "/turning-on/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/turning-on/iphone/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/turning-on/iphone/notes/*"
+  to = "/index.html"
+  status = 200
