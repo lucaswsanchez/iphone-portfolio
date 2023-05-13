@@ -1,7 +1,6 @@
 import "./TurningOn.css";
 import AppleLogo from "../../../assets/images/apple.png";
 import { useEffect, useState } from "react";
-import { MdNavigateNext } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const TurningOn = () => {
@@ -38,9 +37,7 @@ const TurningOn = () => {
               <div className="apple-text">
                 <p>Tu Iphone esta listo</p>
                 <Link to="/turning-on/iphone" className="link white">
-                  <p>
-                    Continuar <MdNavigateNext color="white" size={18} />
-                  </p>
+                  <p>Continuar &gt;</p>
                 </Link>
               </div>
             ) : (

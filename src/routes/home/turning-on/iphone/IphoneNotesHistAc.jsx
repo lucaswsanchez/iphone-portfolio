@@ -1,6 +1,8 @@
+import "./IphoneNotesHistAc.css";
 import { AiFillSignal } from "react-icons/ai";
 import { MdWifi, MdNavigateBefore } from "react-icons/md";
 import { BsBatteryHalf } from "react-icons/bs";
+import { RxDot } from "react-icons/rx";
 import AddPerson from "../../../../assets/images/add-person.png";
 import Share from "../../../../assets/images/share.png";
 import Delete from "../../../../assets/images/delete.png";
@@ -52,6 +54,29 @@ const IphoneNotesHistAc = () => {
             </div>
             <div className="in-header-text">
               <p>01 de enero de 2023, 10:45</p>
+            </div>
+            <div className="historial-academico">
+              <ul>
+                <li>
+                  <RxDot className="yellow" size={12} /> Desde principios de
+                  2022, me he dedicado a aprender programación de forma
+                  autodidacta, principalmente enfocado en el desarrollo
+                  front-end. Adquirí habilidades avanzadas en maquetación,
+                  diseño de interfaces y desarrollo responsive.
+                </li>
+                <li>
+                  <RxDot className="yellow" size={12} />
+                  Actualmente estoy cursando la Tecnicatura en Análisis de
+                  Sistemas, donde profundizo en programación orientada a
+                  objetos, estructuras de datos y desarrollo back-end.
+                </li>
+                <li>
+                  <RxDot className="yellow" size={12} />
+                  Tengo un nivel C2 de inglés, lo que me permite acceder a
+                  recursos y documentación en línea para seguir creciendo en la
+                  industria.
+                </li>
+              </ul>
             </div>
             <div className="in-notes-footer">
               <img src={Delete} alt="Delete" />

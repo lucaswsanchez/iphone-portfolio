@@ -96,10 +96,12 @@ const Iphone = () => {
                   <figcaption>Maps</figcaption>
                 </div>
                 <div className="apps">
-                  <figure>
-                    <img src={Mail} alt="mail" />
-                  </figure>
-                  <figcaption>Mail</figcaption>
+                  <Link to="/turning-on/iphone/mail" className="link white">
+                    <figure>
+                      <img src={Mail} alt="mail" />
+                    </figure>
+                    <figcaption>Mail</figcaption>
+                  </Link>
                 </div>
                 <div className="apps">
                   <figure>

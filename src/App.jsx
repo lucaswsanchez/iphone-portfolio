@@ -8,6 +8,7 @@ import Ecommerce from "./routes/home/turning-on/iphone/Ecommerce";
 import IphoneNotesHabTec from "./routes/home/turning-on/iphone/IphoneNotesHabTec";
 import IphoneNotesHabBla from "./routes/home/turning-on/iphone/IphoneNotesHabBla";
 import IphoneNotesHistAc from "./routes/home/turning-on/iphone/IphoneNotesHistAc";
+import IphoneMail from "./routes/home/turning-on/iphone/IphoneMail";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           path="/turning-on/iphone/notes/hist-ac"
           element={<IphoneNotesHistAc />}
         />
+        <Route path="/turning-on/iphone/mail" element={<IphoneMail />} />
         <Route path="/turning-on/iphone/ecommerce" element={<Ecommerce />} />
       </Routes>
     </Router>
