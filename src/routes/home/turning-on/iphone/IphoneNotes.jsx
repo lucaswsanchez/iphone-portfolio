@@ -1,4 +1,5 @@
 import "./IphoneNotes.css";
+import IPhoneContainer from "../../../../IphoneContainer";
 import { AiFillSignal, AiOutlineSearch } from "react-icons/ai";
 import { MdWifi, MdNavigateBefore } from "react-icons/md";
 import { BsBatteryHalf } from "react-icons/bs";
@@ -8,84 +9,55 @@ import { Link } from "react-router-dom";
 
 const IphoneNotes = () => {
   return (
-    <div className="iphone6">
-      <div className="container">
-        <div className="frame">
-          <div className="frame-top">
-            <div className="sensor-container">
-              <div className="sensor"></div>
-            </div>
-            <div className="speaker-cam">
-              <div className="cam-container">
-                <div className="camera"></div>
-              </div>
-              <div className="speaker-container">
-                <div className="speaker"></div>
-              </div>
-            </div>
+    <IPhoneContainer>
+      <div className="notes-screen">
+        <div className="screen-header">
+          <div className="signal">
+            <AiFillSignal size={12} /> Bell <MdWifi />
           </div>
-          <div className="notes-screen">
-            <div className="screen-header">
-              <div className="signal">
-                <AiFillSignal size={12} /> Bell <MdWifi />
-              </div>
-              <div className="time">11:30</div>
-              <div className="battery">
-                50% <BsBatteryHalf size={18} />
-              </div>
-            </div>
-            <div className="notes-header yellow">
-              <Link to="/turning-on/iphone" className="yellow">
-                <MdNavigateBefore size={30} />
-              </Link>
-              <p>Editar</p>
-            </div>
-            <div className="notes">
-              <h2>Notas</h2>
-              <div className="search-notes">
-                <AiOutlineSearch color="#8f8f94" />
-                <input type="search" placeholder="Buscar" />
-              </div>
-              <Link
-                to="/turning-on/iphone/notes/hab-tec"
-                className="link black"
-              >
-                <div className="note" style={{ marginTop: "12px" }}>
-                  <h5>Habilidades tecnicas</h5>
-                  <p>Hoy</p>
-                </div>
-              </Link>
-              <Link
-                to="/turning-on/iphone/notes/hab-bla"
-                className="link black"
-              >
-                <div className="note">
-                  <h5>Habilidades blandas</h5>
-                  <p>Hoy</p>
-                </div>
-              </Link>
-              <Link
-                to="/turning-on/iphone/notes/hist-ac"
-                className="link black"
-              >
-                <div className="note">
-                  <h5>Historial academico</h5>
-                  <p>Hoy</p>
-                </div>
-              </Link>
-              <div className="notes-footer">
-                <img src={SquareNote} alt="square-note" />
-                <p> 3 notas</p>
-                <img src={NewNote} alt="new-note" />
-              </div>
-            </div>
+          <div className="time">11:30</div>
+          <div className="battery">
+            50% <BsBatteryHalf size={18} />
           </div>
-          <div className="frame-bottom">
-            <div className="home-btn"></div>
+        </div>
+        <div className="notes-header yellow slide-in-fwd-center">
+          <Link to="/turning-on/iphone" className="yellow">
+            <MdNavigateBefore size={30} />
+          </Link>
+          <p>Editar</p>
+        </div>
+        <div className="notes slide-in-fwd-center">
+          <h2>Notas</h2>
+          <div className="search-notes">
+            <AiOutlineSearch color="#8f8f94" />
+            <input type="search" placeholder="Buscar" />
+          </div>
+          <Link to="/turning-on/iphone/notes/hab-tec" className="link black">
+            <div className="note" style={{ marginTop: "12px" }}>
+              <h5>Habilidades tecnicas</h5>
+              <p>Hoy</p>
+            </div>
+          </Link>
+          <Link to="/turning-on/iphone/notes/hab-bla" className="link black">
+            <div className="note">
+              <h5>Habilidades blandas</h5>
+              <p>Hoy</p>
+            </div>
+          </Link>
+          <Link to="/turning-on/iphone/notes/hist-ac" className="link black">
+            <div className="note">
+              <h5>Historial academico</h5>
+              <p>Hoy</p>
+            </div>
+          </Link>
+          <div className="notes-footer">
+            <img src={SquareNote} alt="square-note" />
+            <p> 3 notas</p>
+            <img src={NewNote} alt="new-note" />
           </div>
         </div>
       </div>
-    </div>
+    </IPhoneContainer>
   );
 };
 

@@ -1,4 +1,5 @@
 import "./IphoneMail.css";
+import IPhoneContainer from "../../../../IphoneContainer";
 import { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { ToastContainer, toast } from "react-toastify";
@@ -38,104 +39,84 @@ const IphoneMail = () => {
   }, [state.succeeded]);
 
   return (
-    <div className="iphone6">
-      <div className="container">
-        <div className="frame">
-          <div className="frame-top">
-            <div className="sensor-container">
-              <div className="sensor"></div>
-            </div>
-            <div className="speaker-cam">
-              <div className="cam-container">
-                <div className="camera"></div>
-              </div>
-              <div className="speaker-container">
-                <div className="speaker"></div>
-              </div>
-            </div>
+    <IPhoneContainer>
+      <div className="mail-screen">
+        <div className="screen-header">
+          <div className="signal">
+            <AiFillSignal size={12} /> Bell <MdWifi />
           </div>
-          <div className="mail-screen">
-            <div className="screen-header">
-              <div className="signal">
-                <AiFillSignal size={12} /> Bell <MdWifi />
-              </div>
-              <div className="time">11:30</div>
-              <div className="battery">
-                50% <BsBatteryHalf size={18} />
-              </div>
-            </div>
-            <form onSubmit={handleSubmit}>
-              <div className="in-mail-header">
-                <Link to="/turning-on/iphone" className="link">
-                  <div className="blue">Cancelar</div>
-                </Link>
-                <h4>Nuevo mensaje</h4>
-                <button
-                  type="submit"
-                  className="submit"
-                  disabled={state.submitting}
-                >
-                  Enviar
-                </button>
-              </div>
-              <div className="in-mail-form">
-                <div className="form-name">
-                  <label htmlFor="name">Nombre:</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={valorCampo1}
-                    onChange={(event) => setValorCampo1(event.target.value)}
-                  />
-                  <ValidationError
-                    prefix="Name"
-                    field="name"
-                    errors={state.errors}
-                  />
-                </div>
-                <div className="form-mail">
-                  <label htmlFor="email">Correo:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={valorCampo2}
-                    onChange={(event) => setValorCampo2(event.target.value)}
-                  />
-                  <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                  />
-                </div>
-                <div className="form-message">
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    value={valorCampo3}
-                    onChange={(event) => setValorCampo3(event.target.value)}
-                  />
-                  <ValidationError
-                    prefix="Message"
-                    field="message"
-                    errors={state.errors}
-                  />
-                </div>
-                <p>Enviado desde mi Iphone</p>
-              </div>
-            </form>
-            <ToastContainer />
-          </div>
-          <div className="frame-bottom">
-            <div className="home-btn"></div>
+          <div className="time">11:30</div>
+          <div className="battery">
+            50% <BsBatteryHalf size={18} />
           </div>
         </div>
+        <form onSubmit={handleSubmit} className="slide-in-fwd-center">
+          <div className="in-mail-header">
+            <Link to="/turning-on/iphone" className="link">
+              <div className="blue">Cancelar</div>
+            </Link>
+            <h4>Nuevo mensaje</h4>
+            <button
+              type="submit"
+              className="submit"
+              disabled={state.submitting}
+            >
+              Enviar
+            </button>
+          </div>
+          <div className="in-mail-form">
+            <div className="form-name">
+              <label htmlFor="name">Nombre:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                value={valorCampo1}
+                onChange={(event) => setValorCampo1(event.target.value)}
+              />
+              <ValidationError
+                prefix="Name"
+                field="name"
+                errors={state.errors}
+              />
+            </div>
+            <div className="form-mail">
+              <label htmlFor="email">Correo:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                value={valorCampo2}
+                onChange={(event) => setValorCampo2(event.target.value)}
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+            </div>
+            <div className="form-message">
+              <textarea
+                id="message"
+                name="message"
+                required
+                value={valorCampo3}
+                onChange={(event) => setValorCampo3(event.target.value)}
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
+            </div>
+            <p>Enviado desde mi Iphone</p>
+          </div>
+        </form>
+        <ToastContainer />
       </div>
-    </div>
+    </IPhoneContainer>
   );
 };
 
