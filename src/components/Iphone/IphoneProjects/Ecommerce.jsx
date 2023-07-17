@@ -1,21 +1,21 @@
-import IPhoneContainer from "../../../../IphoneContainer";
-import "./Ecommerce.css";
+import "../../../styles/Projects.css";
 import { AiFillSignal } from "react-icons/ai";
 import { MdWifi } from "react-icons/md";
 import { BsBatteryHalf } from "react-icons/bs";
-import Padlock from "../../../../assets/images/padlock.png";
-import Refresh from "../../../../assets/images/refresh.png";
-import LeftBlue from "../../../../assets/images/leftblue.png";
-import RightBlue from "../../../../assets/images/rightblue.png";
-import ShareBlue from "../../../../assets/images/shareblue.png";
-import BookBlue from "../../../../assets/images/bluebook.png";
-import SquareBlue from "../../../../assets/images/squareblue.png";
 import { Link } from "react-router-dom";
+import Padlock from "../../../assets/images/padlock.png";
+import Refresh from "../../../assets/images/refresh.png";
+import LeftBlue from "../../../assets/images/leftblue.png";
+import RightBlue from "../../../assets/images/rightblue.png";
+import ShareBlue from "../../../assets/images/shareblue.png";
+import BookBlue from "../../../assets/images/bluebook.png";
+import SquareBlue from "../../../assets/images/squareblue.png";
+import IPhoneContainer from "../../Container/IphoneContainer";
 
 const Ecommerce = () => {
   return (
     <IPhoneContainer>
-      <div className="ecommerce-screen">
+      <div className="project-screen">
         <div className="screen-header">
           <div className="signal">
             <AiFillSignal size={12} /> Bell <MdWifi />
@@ -42,9 +42,9 @@ const Ecommerce = () => {
           </div>
           <div className="safari-footer">
             <Link to="/turning-on/iphone">
-              <img className="padding-ecommerce" src={LeftBlue} alt="1" />
+              <img className="padding-project" src={LeftBlue} alt="1" />
             </Link>
-            <img className="padding-ecommerce" src={RightBlue} alt="1" />
+            <img className="padding-project" src={RightBlue} alt="1" />
             <img src={ShareBlue} alt="1" />
             <img src={BookBlue} alt="1" />
             <img src={SquareBlue} alt="1" />

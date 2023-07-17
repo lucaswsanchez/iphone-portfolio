@@ -1,0 +1,66 @@
+.toggle-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-container p {
+  font-size: 14px;
+}
+
+.toggle-container input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-container label {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #c9c9c9;
+  border-radius: 34px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-container label::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #393453;
+  top: 4px;
+  left: 4px;
+  transition: transform 0.2s;
+  z-index: 1;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-container input[type="checkbox"]:checked + label::before {
+  transform: translateX(26px);
+}
+
+.flag-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  display: inline-block;
+  margin: 7px;
+  position: relative;
+  z-index: 2;
+  transition: left 0.2s;
+}
+
+.flag-icon.flag-icon-us {
+  background-image: url("../assets//images/us.svg");
+  left: 0;
+}
+
+.flag-icon.flag-icon-es {
+  background-image: url("../assets//images/es.svg");
+  left: 26px;
+}

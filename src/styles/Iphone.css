@@ -1,0 +1,172 @@
+.main-screen {
+  width: 95%;
+  height: 77%;
+  background-image: url("../assets/images/Wallpaper.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.screen-header {
+  width: 100%;
+  height: 3%;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signal {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.time {
+  padding-right: 9px;
+}
+
+.battery {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.screen-main {
+  width: 100%;
+  height: 84%;
+}
+
+.main-apps {
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apps figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.main-apps img {
+  width: 46px;
+}
+
+.main-apps figcaption {
+  text-align: center;
+  font-size: 9px;
+}
+
+.screen-footer {
+  width: 100%;
+  height: 13%;
+  display: flex;
+  background-color: rgba(179, 179, 179, 0.4);
+}
+
+.footer-apps {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-apps img {
+  width: 44px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.modal.show {
+  opacity: 1;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5%;
+  left: 92%;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.modal-content {
+  width: 90%;
+  height: 60%;
+  margin-bottom: 50px;
+}
+
+.modal-title {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title p {
+  font-size: 22px;
+}
+
+.modal-projects-container {
+  width: 100%;
+  height: 80%;
+  background-color: rgba(165, 163, 163, 0.56);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 10px;
+}
+
+.modal-projects {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-left: 15px;
+}
+
+.modal-projects img {
+  width: 50px;
+}
+
+.modal-projects figcaption {
+  text-align: center;
+  font-size: 10px;
+}
+
+.margin {
+  position: absolute;
+  top: 215px;
+}

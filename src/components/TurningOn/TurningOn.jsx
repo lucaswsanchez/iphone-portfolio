@@ -1,16 +1,18 @@
-import "./TurningOn.css";
-import AppleLogo from "../../../assets/images/apple.png";
+import "../../styles/TurningOn.css";
+import AppleLogo from "../../assets/images/apple.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import IPhoneContainer from "../../../IphoneContainer";
+import IPhoneContainer from "../Container/IphoneContainer";
+import { useTranslation } from "react-i18next";
 
 const TurningOn = () => {
   const [showText, setShowText] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowText(true);
-    }, 5000);
+    }, 1000);
 
     return () => clearTimeout(timeoutId);
   }, []);
@@ -21,13 +23,13 @@ const TurningOn = () => {
         <img src={AppleLogo} alt="apple-logo" />
         {showText ? (
           <div className="apple-text">
-            <p>Tu Iphone esta listo</p>
+            <p>{t("ready")}</p>
             <Link to="/turning-on/iphone" className="link white">
-              <p>Continuar &gt;</p>
+              <p>{t("continue")} &gt;</p>
             </Link>
           </div>
         ) : (
-          <p>Cargando...</p>
+          <p>{t("loading")}</p>
         )}
       </div>
     </IPhoneContainer>

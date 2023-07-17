@@ -1,6 +1,8 @@
-import "./IphoneContainer.css";
+import { Link } from "react-router-dom";
+import "../../styles/IphoneContainer.css";
 
 const IPhoneContainer = ({ children }) => {
+
   return (
     <div className="iphone6">
       <div className="container">
@@ -20,7 +22,9 @@ const IPhoneContainer = ({ children }) => {
           </div>
           {children}
           <div className="frame-bottom">
-            <div className="home-btn"></div>
+            <Link to="/">
+              <div></div>
+            </Link>
           </div>
         </div>
       </div>

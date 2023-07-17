@@ -1,5 +1,5 @@
-import "./IphoneNotesHabTec.css";
-import IPhoneContainer from "../../../../IphoneContainer";
+import "../../../styles/IphoneNotesTechSkills.css";
+import { useTranslation } from "react-i18next";
 import { AiFillSignal } from "react-icons/ai";
 import { MdWifi, MdNavigateBefore } from "react-icons/md";
 import { BsBatteryHalf } from "react-icons/bs";
@@ -12,17 +12,19 @@ import { SiRedux } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { ImMobile } from "react-icons/im";
-import AddPerson from "../../../../assets/images/add-person.png";
-import Share from "../../../../assets/images/share.png";
-import Delete from "../../../../assets/images/delete.png";
-import Check from "../../../../assets/images/check.png";
-import Add from "../../../../assets/images/add+.png";
-import Marker from "../../../../assets/images/marker.png";
-import NewNote from "../../../../assets/images/new-notes.png";
 import { Link } from "react-router-dom";
+import AddPerson from "../../../assets/images/add-person.png";
+import Share from "../../../assets/images/share.png";
+import Delete from "../../../assets/images/delete.png";
+import Check from "../../../assets/images/check.png";
+import Add from "../../../assets/images/add+.png";
+import Marker from "../../../assets/images/marker.png";
+import NewNote from "../../../assets/images/new-notes.png";
+import IPhoneContainer from "../../Container/IphoneContainer";
 
+const IphoneNotesTechSkills = () => {
+  const { t } = useTranslation();
 
-const IphoneNotesHabTec = () => {
   return (
     <IPhoneContainer>
       <div className="notes-screen">
@@ -39,7 +41,7 @@ const IphoneNotesHabTec = () => {
           <Link to="/turning-on/iphone/notes" className="yellow">
             <div className="in-header-one yellow">
               <MdNavigateBefore size={30} />
-              <p>Notas</p>
+              <p>{t("notes")}</p>
             </div>
           </Link>
           <div className="in-header-two">
@@ -48,10 +50,10 @@ const IphoneNotesHabTec = () => {
           </div>
         </div>
         <div className="in-header-text slide-in-fwd-center">
-          <p>01 de enero de 2023, 11:22</p>
+          <p>{t("date")}</p>
         </div>
         <div className="habilidades-tecnicas slide-in-fwd-center">
-          <h4>Habilidades Tecnicas</h4>
+          <h4>{t("techSkills")}</h4>
           <div className="skills">
             <div className="skills-one">
               <ul>
@@ -80,7 +82,8 @@ const IphoneNotesHabTec = () => {
             <div className="skills-two">
               <ul>
                 <li>
-                  <RxDot size={12} className="yellow" /> Implementacion API's
+                  <RxDot size={12} className="yellow" />
+                  {t("api")}
                 </li>
                 <li>
                   <RxDot size={12} className="yellow" /> React: Router, Context
@@ -121,4 +124,4 @@ const IphoneNotesHabTec = () => {
   );
 };
 
-export default IphoneNotesHabTec;
+export default IphoneNotesTechSkills;

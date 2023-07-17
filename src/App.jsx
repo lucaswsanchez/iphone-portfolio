@@ -1,39 +1,43 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import "./App.css";
-import Home from "./routes/home/Home";
-import TurningOn from "./routes/home/turning-on/TurningOn";
-import Iphone from "./routes/home/turning-on/iphone/Iphone";
-import IphoneNotes from "./routes/home/turning-on/iphone/IphoneNotes";
-import Ecommerce from "./routes/home/turning-on/iphone/Ecommerce";
-import IphoneNotesHabTec from "./routes/home/turning-on/iphone/IphoneNotesHabTec";
-import IphoneNotesHabBla from "./routes/home/turning-on/iphone/IphoneNotesHabBla";
-import IphoneNotesHistAc from "./routes/home/turning-on/iphone/IphoneNotesHistAc";
-import IphoneMail from "./routes/home/turning-on/iphone/IphoneMail";
+import { Routes, Route } from "react-router-dom";
+import "./styles/App.css";
+import Home from "./components/Home";
+import TurningOn from "./components/TurningOn/TurningOn";
+import Iphone from "./components/Iphone/Iphone";
+import IphoneMail from "./components/Iphone/IphoneMail";
+import IphoneNotes from "./components/Iphone/IphoneNotes/IphoneNotes";
+import IphoneNotesTechSkills from "./components/Iphone/IphoneNotes/IphoneNotesTechSkills";
+import IphoneNotesSoftSkills from "./components/Iphone/IphoneNotes/IphoneNotesSoftSkills";
+import IphoneNotesAcademic from "./components/Iphone/IphoneNotes/IphoneNotesAcademic";
+import Ecommerce from "./components/Iphone/IphoneProjects/Ecommerce";
+import SportBlog from "./components/Iphone/IphoneProjects/SportBlog";
+import Yuh from "./components/Iphone/IphoneProjects/Yuh";
+import Portfolio from "./components/Iphone/IphoneProjects/Portfolio";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/turning-on" element={<TurningOn />} />
-        <Route path="/turning-on/iphone" element={<Iphone />} />
-        <Route path="/turning-on/iphone/notes" element={<IphoneNotes />} />
-        <Route
-          path="/turning-on/iphone/notes/hab-tec"
-          element={<IphoneNotesHabTec />}
-        />
-        <Route
-          path="/turning-on/iphone/notes/hab-bla"
-          element={<IphoneNotesHabBla />}
-        />
-        <Route
-          path="/turning-on/iphone/notes/hist-ac"
-          element={<IphoneNotesHistAc />}
-        />
-        <Route path="/turning-on/iphone/mail" element={<IphoneMail />} />
-        <Route path="/turning-on/iphone/ecommerce" element={<Ecommerce />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/turning-on" element={<TurningOn />} />
+      <Route path="/turning-on/iphone" element={<Iphone />} />
+      <Route path="/turning-on/iphone/mail" element={<IphoneMail />} />
+      <Route path="/turning-on/iphone/notes" element={<IphoneNotes />} />
+      <Route
+        path="/turning-on/iphone/notes/tech-skills"
+        element={<IphoneNotesTechSkills />}
+      />
+      <Route
+        path="/turning-on/iphone/notes/soft-skills"
+        element={<IphoneNotesSoftSkills />}
+      />
+      <Route
+        path="/turning-on/iphone/notes/academic"
+        element={<IphoneNotesAcademic />}
+      />
+      <Route path="/turning-on/iphone/ecommerce" element={<Ecommerce />} />
+      <Route path="/turning-on/iphone/sportblog" element={<SportBlog />} />
+      <Route path="/turning-on/iphone/yuh" element={<Yuh />} />
+      <Route path="/turning-on/iphone/portfolio" element={<Portfolio />} />
+    </Routes>
   );
 }
 

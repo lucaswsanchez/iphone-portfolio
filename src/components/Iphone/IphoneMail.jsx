@@ -1,19 +1,21 @@
-import "./IphoneMail.css";
-import IPhoneContainer from "../../../../IphoneContainer";
+import "../../styles/IphoneMail.css";
+import "react-toastify/dist/ReactToastify.css";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { useForm, ValidationError } from "@formspree/react";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { AiFillSignal } from "react-icons/ai";
 import { MdWifi } from "react-icons/md";
 import { BsBatteryHalf } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import IPhoneContainer from "../Container/IphoneContainer";
 
 const IphoneMail = () => {
   const [state, handleSubmit] = useForm("xdovypeg");
   const [valorCampo1, setValorCampo1] = useState("");
   const [valorCampo2, setValorCampo2] = useState("");
   const [valorCampo3, setValorCampo3] = useState("");
+  const { t } = useTranslation();
 
   const handleToast = () => {
     toast.success("Tu mensaje fue enviado con éxito!", {
@@ -53,20 +55,20 @@ const IphoneMail = () => {
         <form onSubmit={handleSubmit} className="slide-in-fwd-center">
           <div className="in-mail-header">
             <Link to="/turning-on/iphone" className="link">
-              <div className="blue">Cancelar</div>
+              <div className="blue">{t("cancel")}</div>
             </Link>
-            <h4>Nuevo mensaje</h4>
+            <h4>{t("newMessage")}</h4>
             <button
               type="submit"
               className="submit"
               disabled={state.submitting}
             >
-              Enviar
+              {t("send")}
             </button>
           </div>
           <div className="in-mail-form">
             <div className="form-name">
-              <label htmlFor="name">Nombre:</label>
+              <label htmlFor="name">{t("emailName")}</label>
               <input
                 type="text"
                 id="name"
@@ -82,7 +84,7 @@ const IphoneMail = () => {
               />
             </div>
             <div className="form-mail">
-              <label htmlFor="email">Correo:</label>
+              <label htmlFor="email">{t("email")}</label>
               <input
                 type="email"
                 id="email"
@@ -111,7 +113,7 @@ const IphoneMail = () => {
                 errors={state.errors}
               />
             </div>
-            <p>Enviado desde mi Iphone</p>
+            <p>{t("sentIphone")}</p>
           </div>
         </form>
         <ToastContainer />

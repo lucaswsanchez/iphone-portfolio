@@ -2,11 +2,12 @@
   width: 90%;
   height: 80%;
   margin: auto;
-  padding-top: 14px;
+  padding-top: 10px;
 }
 
 .historial-academico ul li {
   list-style: none;
+  text-align: justify;
   line-height: 1.5;
   font-size: 14px;
 }
