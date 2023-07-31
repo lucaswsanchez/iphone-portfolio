@@ -27,9 +27,38 @@ import Stocks from "../../assets/images/stocks.png";
 import Weather from "../../assets/images/weather.png";
 import Files from "../../assets/images/files.png";
 
+const projects = [
+  {
+    name: "Ecommerce",
+    iphoneLink: "/turning-on/iphone/ecommerce",
+    newTabLink: "https://lucaswsanchez.github.io/react-ecommerce/",
+    repositoryLink: "https://github.com/lucaswsanchez/react-ecommerce",
+  },
+  {
+    name: "Yuh",
+    iphoneLink: "/turning-on/iphone/yuh",
+    newTabLink: "https://yuh-website.netlify.app/",
+    repositoryLink: "https://github.com/lucaswsanchez/yuh-ecommerce",
+  },
+  {
+    name: "Sport Blog",
+    iphoneLink: "/turning-on/iphone/sportblog",
+    newTabLink: "https://sport-project.netlify.app/",
+    repositoryLink: "https://github.com/lucaswsanchez/sport-project",
+  },
+  {
+    name: "Portfolio",
+    iphoneLink: "/turning-on/iphone/portfolio",
+    newTabLink: "https://lucaswsanchez-portfolio.netlify.app/",
+    repositoryLink: "https://github.com/lucaswsanchez/personal-portfolio",
+  },
+];
+
 const Iphone = () => {
   const { t } = useTranslation();
   const [showModal, setShowModal] = useState(false);
+  const [showSecondaryModal, setShowSecondaryModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const handleFigureClick = () => {
     setShowModal(true);
@@ -37,6 +66,12 @@ const Iphone = () => {
 
   const handleCloseModal = () => {
     setShowModal(false);
+    setShowSecondaryModal(false);
+  };
+
+  const handleOpenSecondaryModal = (project) => {
+    setSelectedProject(project);
+    setShowSecondaryModal(true);
   };
 
   return (
@@ -198,49 +233,49 @@ const Iphone = () => {
               </div>
               <div className="modal-projects-container">
                 <div className="modal-projects">
-                  <div className="apps">
-                    <Link
-                      to="/turning-on/iphone/ecommerce"
-                      className="link white"
-                    >
-                      <figure>
-                        <img src={Safari} alt="imessage" />
-                        <figcaption>Ecommerce</figcaption>
-                      </figure>
-                    </Link>
-                  </div>
-                  <div className="apps">
-                    <Link to="/turning-on/iphone/yuh" className="link white">
-                      <figure>
-                        <img src={Safari} alt="safari" />
-                        <figcaption>Yuh</figcaption>
-                      </figure>
-                    </Link>
-                  </div>
-                  <div className="apps">
-                    <Link
-                      to="/turning-on/iphone/sportblog"
-                      className="link white"
-                    >
-                      <figure>
-                        <img src={Safari} alt="safari" />{" "}
-                        <figcaption>Sport blog</figcaption>
-                      </figure>
-                    </Link>
-                  </div>
-                  <div className="apps margin">
-                    <Link
-                      to="/turning-on/iphone/portfolio"
-                      className="link white"
-                    >
-                      <figure>
-                        <img src={Safari} alt="safari" />
-                        <figcaption>Portfolio</figcaption>
-                      </figure>
-                    </Link>
-                  </div>
+                  {projects.map((project) => (
+                    <div className="apps" key={project.name}>
+                      <button onClick={() => handleOpenSecondaryModal(project)}>
+                        <figure>
+                          <img src={Safari} alt={project.name} />
+                          <figcaption>{project.name}</figcaption>
+                        </figure>
+                      </button>
+                    </div>
+                  ))}
                 </div>
               </div>
+            </div>
+          </div>
+        )}
+        {showSecondaryModal && selectedProject && (
+          <div className="modal-secondary slide-in-fwd-center">
+            <div className="modal-secondary-content">
+              <h4>MENU</h4>
+              <ul>
+                <Link to={selectedProject.iphoneLink} className="link black">
+                  <li>{t("iphoneLink")}</li>
+                </Link>
+                <a
+                  href={selectedProject.newTabLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link black"
+                >
+                  <li>{t("newTab")}</li>
+                </a>
+                <a
+                  href={selectedProject.repositoryLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link black"
+                >
+                  <li>{t("repository")}</li>
+                </a>
+              </ul>
+              <button onClick={() => setShowSecondaryModal(false)}>
+                <h5>CERRAR</h5>
+              </button>
             </div>
           </div>
         )}

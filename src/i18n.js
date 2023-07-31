@@ -44,6 +44,9 @@ i18n.use(initReactI18next).init({
           "I'm currently studying a degree in Systems Analysis, where I am deepening on the fundamentals of programming. Also, I'm learning back end development with PHP and Laravel.",
         academicThree:
           "I have a C2 level of English, which allows me to access a large amount of online resources and documentation to continue growing as a professional.",
+        iphoneLink: "Open in Iphone",
+        newTab: "Open in a new tab",
+        repository: "Open repository",
       },
     },
     es: {
@@ -85,6 +88,9 @@ i18n.use(initReactI18next).init({
           "Actualmente estoy cursando la Tecnicatura en Análisis de Sistemas, donde estoy profundizando sobre los fundamentos de la programación. Tambien, me encuentro aprendiendo desarrollo back end con PHP y Laravel.",
         academicThree:
           "Tengo un nivel C2 de inglés, lo que me permite acceder a una gran cantidad de recursos y documentación en línea para seguir creciendo como profesional.",
+        iphoneLink: "Abrir en Iphone",
+        newTab: "Abrir en nueva pestaña",
+        repository: "Abrir repositorio",
       },
     },
   },
