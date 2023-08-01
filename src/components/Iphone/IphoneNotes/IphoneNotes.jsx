@@ -59,6 +59,16 @@ const IphoneNotes = () => {
               <p>{t("today")}</p>
             </div>
           </Link>
+          <a
+            href="https://drive.google.com/drive/folders/1Zc5vxEo1AFbrQxAAAFmk_AAItJ7TfqHU?usp=sharing"
+            target="_blank"
+            className="link black"
+          >
+            <div className="note">
+              <h5>{t("cv")}</h5>
+              <p>{t("today")}</p>
+            </div>
+          </a>
           <div className="notes-footer">
             <img src={SquareNote} alt="square-note" />
             <p>{t("threeNotes")}</p>
