@@ -6,7 +6,7 @@
 Este es mi portafolio personal que simula un iPhone y ofrece una experiencia interactiva para explorar mi trabajo y habilidades. La página presenta una réplica de un iPhone en la que puedes navegar entre diferentes secciones.
 
 ## Demo
-Puedes ver una demostración en vivo del proyecto [aquí](https://www.example.com/demo).
+Puedes ver una demostración en vivo del proyecto [aquí](https://sanchezlucas-portfolio.netlify.app/).
 
 ## Capturas de pantalla
 ![Captura de pantalla 1](/src/assets/images/screenshot2.png)
