@@ -3,7 +3,7 @@
 ![iPhone Simulator](/src/assets/images/screenshot1.png)
 
 ## Description
-This is my portfolio where I developed an Iphone simulator, it was very useful to practice my layout skills. It offers an interactive experience to explore my capabilities and like every portfolio, you can find contact form, my technical skills and my completed projects. 
+This is my portfolio where I developed an Iphone simulator, it was very useful to practice my layout skills. It offers an interactive experience to explore my capabilities and like every portfolio, you can find contact form, soft and technical skills and finished projects. 
 
 ## Demo
 You can see a live demo of the project [here](https://sanchezlucas-portfolio.netlify.app/).
