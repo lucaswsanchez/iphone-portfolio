@@ -2,24 +2,24 @@
 
 ![iPhone Simulator](/src/assets/images/screenshot1.png)
 
-## Descripción
-Este es mi portafolio, donde decidi desarrollar un simulador de un Iphone, me sirvio mucho para practicar mis habilidades de maquetado. Ofrece una experiencia interactiva para explorar mis capacidades y  como en todo portafolio, se puede encontrar formulario de contacto, mis habilidades tecnicas y mis proyectos realizados. 
+## Description
+This is my portfolio where I developed an Iphone simulator, it was very useful to practice my layout skills. It offers an interactive experience to explore my capabilities and like every portfolio, you can find contact form, my technical skills and my completed projects. 
 
 ## Demo
-Puedes ver una demostración en vivo del proyecto [aquí](https://sanchezlucas-portfolio.netlify.app/).
+You can see a live demo of the project [here](https://sanchezlucas-portfolio.netlify.app/).
 
-## Capturas de pantalla
+## Screenshots
 ![Captura de pantalla 1](/src/assets/images/screenshot2.png)
 ![Captura de pantalla 2](/src/assets/images/screenshot3.png)
 
-## Idiomas
-El proyecto es multilingüe y puedes cambiar el idioma entre español e inglés para adaptarlo a tus preferencias.
+## Languages
+The project is multilingual and you can switch language between English and Spanish to suit your preferences.
 
-## Tecnologías utilizadas
+## Used technologies
 - JavaScript
 - HTML
 - CSS
 - React
 
-## Contacto
-Si tienes alguna pregunta o comentario, puedes contactarme en https://www.linkedin.com/in/lucaswsanchez/
+## Contact
+If you have any questions or comments, you can contact me at https://www.linkedin.com/in/lucaswsanchez/
