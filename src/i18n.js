@@ -42,7 +42,7 @@ i18n.use(initReactI18next).init({
         academicOne:
           "Since the beginning of 2022, I have dedicated myself to learn coding in a self-taught way, focused on front-end development. I gained advanced skills in layout, interface design and responsive development.",
         academicTwo:
-          "I'm currently studying a degree in Systems Analysis, where I am deepening on the fundamentals of programming. Also, I'm learning back end development with PHP and Laravel.",
+          "I'm currently studying a degree in Systems Analysis, where I am deepening on the fundamentals of programming. Also, I'm learning back end development with C# and .NET.",
         academicThree:
           "I have a C2 level of English, which allows me to access a large amount of online resources and documentation to continue growing as a professional.",
         iphoneLink: "Open in Iphone",
@@ -87,7 +87,7 @@ i18n.use(initReactI18next).init({
         academicOne:
           "Desde principios de 2022, me he dedicado a aprender programación de forma autodidacta, enfocado en el desarrollo front-end. Adquirí habilidades avanzadas en maquetación, diseño de interfaces y desarrollo responsive.",
         academicTwo:
-          "Actualmente estoy cursando la Tecnicatura en Análisis de Sistemas, donde estoy profundizando sobre los fundamentos de la programación. Tambien, me encuentro aprendiendo desarrollo back end con PHP y Laravel.",
+          "Actualmente estoy cursando la Tecnicatura en Análisis de Sistemas, donde estoy profundizando sobre los fundamentos de la programación. Tambien, me encuentro aprendiendo desarrollo back end con C# y .NET.",
         academicThree:
           "Tengo un nivel C2 de inglés, lo que me permite acceder a una gran cantidad de recursos y documentación en línea para seguir creciendo como profesional.",
         iphoneLink: "Abrir en Iphone",
